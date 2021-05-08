@@ -7,7 +7,7 @@ As detailed within the description within the host repository, this is an ongoin
 The data used for the project is a mix of unique data and weather data.
 
 The unique data, known as the Running Times Data Set, is created by me from the runs I conduct within the residential neighborhood I reside in within the year of 2021. The unique data consists of: 
-* date_time - the date_time recorded at the beginning my run 
+* date_time - the date_time recorded at the beginning my run,
 * duration - the duration of time taken to complete my 4.2 miles fixed course run.
 
 This data is then loaded into python by panda's read_csv function.
@@ -19,24 +19,28 @@ The website is pinged for its html_file, by iterating over the following url:
 where dt.year, dt.month, and dt.day are varied by the iteration over the 'Running Times' Data Set's column: date_time. Once the appropriate row is stripped from the website it is then written into a local csv file using python's open function.
 
 The weather data consists of:
-* date_time - the date_time from the 'Running Times' Data set. This is used for inner join purposes later detailed
-* poll_time - the time in which the weather data was recorded
-* temperature - the degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch.
-* dew_point - the reported dew_point from the poll_time. The atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form.
-* humidity - a quantity representing the amount of water vapor in the atmosphere or in a gas.
-* wind - the perceptible natural movement of the air, especially in the form of a current of air blowing from a particular direction.
-* wind_speed - or wind flow speed, is a fundamental atmospheric quantity caused by air moving from high to low pressure, usually due to changes in temperature.
-* wind_gust - A gust or wind gust is a brief increase in the speed of the wind, usually less than 20 seconds.
-* pressure - is the force per unit area exerted by the weight of the atmosphere. 
-* precip - is any product of the condensation of atmospheric water vapor that falls under gravitational pull from clouds.
+* date_time - the date_time from the 'Running Times' Data set. This is used for inner join purposes later detailed,
+* poll_time - the time in which the weather data was recorded,
+* temperature - the degree or intensity of heat present in a substance or object, especially as expressed according to a comparative scale and shown by a thermometer or perceived by touch,
+* dew_point - the reported dew_point from the poll_time. The atmospheric temperature (varying according to pressure and humidity) below which water droplets begin to condense and dew can form,
+* humidity - a quantity representing the amount of water vapor in the atmosphere or in a gas,
+* wind - the perceptible natural movement of the air, especially in the form of a current of air blowing from a particular direction,
+* wind_speed - or wind flow speed, is a fundamental atmospheric quantity caused by air moving from high to low pressure, usually due to changes in temperature,
+* wind_gust - A gust or wind gust is a brief increase in the speed of the wind, usually less than 20 seconds,
+* pressure - is the force per unit area exerted by the weight of the atmosphere,
+* precip - is any product of the condensation of atmospheric water vapor that falls under gravitational pull from clouds,
 * condition - the state of the environment determined by the wind velocity and direction, the air temperature and humidity, atmospheric pressure and the stability class. 
 
-It should be noted that the approximated distance of Austin-Bergstrom International Airport to my running course is 7-8 miles WSW from Bergstrom; this approximated distance was determined by the website: 'https://www.freemaptools.com/measure-distance.htm'.
+It should be noted that the approximated distance of Austin-Bergstrom International Airport to my running course is 7-8 miles WSW from Bergstrom; this approximated distance was determined by the website: 
+
+    'https://www.freemaptools.com/measure-distance.htm'.
 
 # Scraping 
 
 Scraping is conducted using selenium for initial access of the website's html_file, 
-this was done by the recommendation of the following post: 'https://stackoverflow.com/questions/55306320/scraping-wunderground-without-api-using-python'
+this was done by the recommendation of the following post: 
+    
+    'https://stackoverflow.com/questions/55306320/scraping-wunderground-without-api-using-python'
 Once I retrieved the html_file of the current iteration of the 'Running Times' Data Set, I filter the html_file using BeautifulSoup.
 Here a single row of data is taken from the website to the closest polling time listed by Austin-Bergstrom International Airport and the 'midpoint date time', 
 where the 'midpoint data time' is calculated by adding half of the 'duration time' to 'date time' from the 'Running Times' Data Set. 
