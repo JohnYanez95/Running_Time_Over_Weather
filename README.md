@@ -51,11 +51,11 @@ This is of course done for each iteration of the 'Running Times' Data Set.
 Once the appropriate rows are selected from 'https://www.wunderground.com' to form our weather_data.csv, we use panda’s functionality '.to_sql(...)' to send our data to a local PostgreSQL data base.
 This also includes the 'Running Times' Data Set. If a similar table is found within the database it will simply be replaced by the updated iteration
 
-$\underline{\text{Note}}:$ When sending data sets from python to PostgreSQL make sure that the tables and columns are labeled with no spaces and within all lower-case letters. Doing otherwise will lead to easily avoidable headaches and confusion when attempting to load the data using SQL.
+Note: When sending data sets from python to PostgreSQL make sure that the tables and columns are labeled with no spaces and within all lower-case letters. Doing otherwise will lead to easily avoidable headaches and confusion when attempting to load the data using SQL.
 
 This functionality would be impossible to implement if it were not for sqlachemy's create_engine function.
 
-$\underline{\text{Note}}:$ The connection to my PostgreSQL data base is not established until it my engine is pinged for use by pandas. This is the crux of my method, since connection to a data base is not known until script is used. Though, this has no issues in regards to my project.
+Note: The connection to my PostgreSQL data base is not established until it my engine is pinged for use by pandas. This is the crux of my method, since connection to a data base is not known until script is used. Though, this has no issues in regards to my project.
 
 
 # Inner Join of Running Times and Weather Data

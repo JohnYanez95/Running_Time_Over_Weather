@@ -1,0 +1,14 @@
+date_time,poll_time,temperature,dew_point,humidity,wind,wind_speed,wind_gust,pressure,precip,condition
+2021-03-1719:00:00,6:53PM,71F,34F,26%,NW,16mph,32mph,29.30in,0.0in,Fair
+2021-03-1919:00:00,6:53PM,67F,39F,36%,NE,13mph,0mph,29.64in,0.0in,Fair
+2021-03-2219:00:00,6:53PM,70F,58F,65%,S,9mph,0mph,29.11in,0.0in,LightRain
+2021-03-2519:00:00,6:53PM,73F,42F,33%,VAR,3mph,0mph,29.26in,0.0in,Fair
+2021-03-2619:30:00,7:53PM,72F,51F,48%,SE,6mph,0mph,29.26in,0.0in,Fair
+2021-03-2720:30:00,8:53PM,66F,64F,93%,N,3mph,0mph,29.28in,0.0in,PartlyCloudy
+2021-03-2921:00:00,8:53PM,64F,49F,58%,S,13mph,0mph,29.40in,0.0in,MostlyCloudy
+2021-03-3120:00:00,7:53PM,61F,35F,38%,NNE,20mph,30mph,29.71in,0.0in,PartlyCloudy
+2021-04-0518:00:00,5:53PM,75F,59F,57%,SE,14mph,0mph,29.34in,0.0in,MostlyCloudy
+2021-04-1021:00:00,8:53PM,56F,40F,55%,NE,3mph,0mph,29.22in,0.0in,Fair
+2021-04-1219:30:00,7:53PM,78F,65F,64%,SSE,8mph,0mph,29.21in,0.0in,MostlyCloudy
+2021-04-1719:00:00,6:53PM,56F,42F,60%,N,18mph,0mph,29.48in,0.0in,MostlyCloudy
+2021-04-1920:00:00,7:53PM,67F,43F,42%,E,7mph,0mph,29.39in,0.0in,MostlyCloudy
