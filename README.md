@@ -15,7 +15,7 @@ This data is then loaded into python by panda's read_csv function.
 The weather data is scraped from an online source known as 'https://www.wunderground.com', where the weather data provided comes originally from the Austin-Bergstrom International Airport. 
 The website is pinged for its html_file, by iterating over the following url:
   
-  'https://www.wunderground.com/history/daily/us/tx/austin/KAUS/date/'+str(dt.year)+'-'+str(dt.month)+'-'+str(dt.day)
+    'https://www.wunderground.com/history/daily/us/tx/austin/KAUS/date/'+str(dt.year)+'-'+str(dt.month)+'-'+str(dt.day)'
 where dt.year, dt.month, and dt.day are varied by the iteration over the 'Running Times' Data Set's column: date_time. Once the appropriate row is stripped from the website it is then written into a local csv file using python's open function.
 
 The weather data consists of:
