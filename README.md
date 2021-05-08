@@ -33,7 +33,7 @@ The weather data consists of:
 
 It should be noted that the approximated distance of Austin-Bergstrom International Airport to my running course is 7-8 miles WSW from Bergstrom; this approximated distance was determined by the website: 
 
-    'https://www.freemaptools.com/measure-distance.htm'.
+    'https://www.freemaptools.com/measure-distance.htm'
 
 # Scraping 
 
